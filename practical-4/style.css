@@ -1,0 +1,65 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+.cart-header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Cart Table Styling */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Book Cover Image */
+.book-cover {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Cart Footer Styling */
+.cart-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#checkoutBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkoutBtn:hover {
+    background-color: #45a049;
+}

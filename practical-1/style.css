@@ -1,0 +1,65 @@
+    /* General styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Header styles */
+    .header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+    
+    /* Navbar styles */
+    .navbar a {
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    /* Categories in the left frame */
+    .categories {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .categories li {
+        margin: 10px 0;
+    }
+    
+    .category-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    /* Book table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f4f4f4;
+    }
+    
+    .book-cover {
+        width: 60px;
+        height: 80px;
+    }

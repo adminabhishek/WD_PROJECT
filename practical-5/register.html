@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <script src="../practical-6/validation.js"></script> <!-- Practical 6 Validation -->
+    <script src="../practical-7/validation7.js"></script> <!-- Practical 7 Validation -->
+</head>
+<body>
+    <div class="registration-container">
+        <h3>Registration Form</h3>
+        <form 
+            id="registrationForm" 
+            onsubmit="return validatePractical6() && validatePractical7()">
+            <!-- Name and Password on the same line -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+            </div>
+
+            <!-- Email and Phone on the same line -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone" required>
+                </div>
+            </div>
+
+            <!-- Sex (Horizontal left to right) -->
+            <div class="sex-group">
+                <label>Sex:</label>
+                <input type="radio" id="male" name="sex" value="Male" required> Male
+                <input type="radio" id="female" name="sex" value="Female" required> Female
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY" required>
+            </div>
+
+            <!-- Languages Known (pairs of two checkboxes per line) -->
+            <div class="form-row-languages">
+                <label for="form-group">Languages </label>
+                <div class="form-group">
+                    <input type="checkbox" id="english" name="languages" value="English"> English
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="telugu" name="languages" value="Telugu"> Telugu
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="hindi" name="languages" value="Hindi"> Hindi
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="tamil" name="languages" value="Tamil"> Tamil
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="2" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Registration Container */
+.registration-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* Limiting max width */
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Form Row for Two Fields in One Line */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Compact Radio and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Styling for Sex radio buttons (Horizontal Left to Right) */
+.sex-group {
+    display: flex;  /* Ensure they are in one line */
+    gap: 15px;  /* Add space between Male and Female options */
+   
+    margin-bottom: 20px;
+}
+
+/* Styling for Languages checkboxes in pairs */
+.form-row-languages {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+}
+
+
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
